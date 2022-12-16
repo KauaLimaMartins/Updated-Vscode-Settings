@@ -1,0 +1,58 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+      "key": "shift+c",
+      "command": "editor.action.addCommentLine",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "shift+u",
+      "command": "editor.action.removeCommentLine",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+k",
+      "command": "explorer.newFolder"
+  },
+  {
+      "key": "ctrl+n",
+      "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+      "key": "ctrl+alt+win+n",
+      "command": "-welcome.showNewFileEntries"
+  },
+  {
+      "key": "ctrl+n",
+      "command": "explorer.newFile"
+  },
+  {
+      "key": "ctrl+shift+k",
+      "command": "-editor.action.deleteLines",
+      "when": "textInputFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+k ctrl+c",
+      "command": "-editor.action.addCommentLine",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+k ctrl+u",
+      "command": "-editor.action.removeCommentLine",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+shift+k",
+      "command": "editor.action.addCommentLine"
+  },
+  {
+      "key": "tab",
+      "command": "acceptSelectedSuggestion",
+      "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+      "key": "tab",
+      "command": "-acceptSelectedSuggestion",
+      "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  }
+]
