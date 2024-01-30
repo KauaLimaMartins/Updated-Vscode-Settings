@@ -1,56 +1,129 @@
 {
-    "tabnine.experimentalAutoImports": true,
-    "window.zoomLevel": 0.5,
-    "workbench.colorTheme": "Deep Ocean - Purple",
-    "workbench.iconTheme": "material-icon-theme",
-    "explorer.confirmDragAndDrop": false,
+    // Editor
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 1.8,
+    "editor.cursorSurroundingLines": 15,
+    "editor.cursorStyle": "line-thin",
     "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.renderLineHighlight": "gutter",
     "editor.tabSize": 2,
-    "explorer.compactFolders": false,
+    "editor.accessibilitySupport": "off",
+    "editor.smoothScrolling": true,
+    "editor.formatOnSave": true,
+    "editor.semanticHighlighting.enabled": false,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+      "source.fixAll": "explicit",
+      "source.fixAll.eslint": "explicit"
     },
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "files.eol": "\n",
-    "git.autofetch": true,
-    "material-icon-theme.activeIconPack": "nest",
-    "material-icon-theme.folders.associations": {
-        "adapters": "contract",
-        "grpc": "pipe",
-        "kube": "kubernetes",
-        "main": "lib",
-        "websockets": "pipe",
-        "implementations": "core",
-        "protos": "pipe",
-        "entities": "class",
-        "kafka": "pipe",
-        "application": "app",
-        "use-cases": "functions",
-        "migrations": "tools",
-        "schemas": "class",
-        "useCases": "functions",
-        "eslint-config": "tools",
-        "typeorm": "database",
-        "_shared": "shared",
-        "mappers": "meta",
-        "fakes": "mock",
-        "modules": "components",
-        "subscribers": "messages",
-        "domain": "class",
-        "protocols": "contract",
-        "infra": "app",
-        "view-models": "views",
-        "viewModels": "views",
-        "presentation": "template",
-        "dtos": "typescript",
-        "http": "container",
-        "providers": "include",
-        "factories": "class",
-        "repositories": "mappings"
+    
+    // Window
+    "window.titleBarStyle": "custom",
+    "window.commandCenter": false,
+    "window.title": "${separator}${rootName}${separator}${profileName}${separator}",
+  
+    // Workbench
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "workbench.iconTheme": "symbols",
+    "workbench.sideBar.location": "right",
+    "workbench.list.smoothScrolling": true,
+    "workbench.editor.labelFormat": "short",
+    "workbench.statusBar.visible": false,
+    "workbench.layoutControl.enabled": false,
+    
+    // Explorer
+    "explorer.compactFolders": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+      "package.json": "package-lock*, .eslint*, .prettier*, tsconfig*, nest-cli*, jest.config*",
+      ".env": ".env*"
+    },
+    
+    // Terminal
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.fontSize": 16,
+  
+    // File types settings
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[prisma]": {
-        "editor.formatOnSave": true
+      "editor.formatOnSave": true
     },
-    "grammarly.files.include": ["**/README.md"]
-}
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+  
+    // Others
+    "files.associations": {
+      "*.tsx": "typescriptreact"
+    },
+    "files.eol": "\n",
+    
+    // EXTENSION: Powermode
+    "powermode.presets": "flames",
+    "powermode.explosions.size": 6,
+    "powermode.combo.location": "off",
+    "powermode.combo.counterEnabled": "hide",
+    "powermode.combo.timerEnabled": "hide",
+    "powermode.shake.enabled": false,
+    "powermode.explosions.enabled": true,
+    "powermode.enabled": true,
+    
+    // EXTENSION: Material Icon Theme
+    "material-icon-theme.activeIconPack": "nest",
+    "material-icon-theme.files.associations": {
+      "*.dto.ts": "less",
+      "*.error.ts": "gulp"
+    },
+    "material-icon-theme.folders.associations": {
+      "adapters": "contract",
+      "filters": "middleware",
+      "grpc": "pipe",
+      "kube": "kubernetes",
+      "main": "lib",
+      "websockets": "pipe",
+      "implementations": "core",
+      "protos": "pipe",
+      "entities": "class",
+      "kafka": "pipe",
+      "application": "app",
+      "use-cases": "functions",
+      "migrations": "tools",
+      "schemas": "class",
+      "useCases": "functions",
+      "eslint-config": "tools",
+      "typeorm": "database",
+      "_shared": "shared",
+      "mappers": "meta",
+      "fakes": "mock",
+      "modules": "components",
+      "subscribers": "messages",
+      "domain": "class",
+      "protocols": "contract",
+      "infra": "app",
+      "view-models": "views",
+      "viewModels": "views",
+      "presentation": "template",
+      "dtos": "typescript",
+      "http": "container",
+      "providers": "include",
+      "factories": "class",
+      "repositories": "mappings"
+    },
+  
+    // EXTENSION: Others
+    "eslint.enable": true,
+    "tabnine.experimentalAutoImports": true,
+    "git.autofetch": true,
+    "jestrunner.codeLensSelector": "**/*.{test,spec}.{js,jsx,ts,tsx}",
+    "go.toolsManagement.autoUpdate": true,
+    "symbols.hidesExplorerArrows": false,
+    "window.zoomLevel": 1,
+  }

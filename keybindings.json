@@ -1,58 +1,114 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-  {
-      "key": "shift+c",
-      "command": "editor.action.addCommentLine",
-      "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-      "key": "shift+u",
-      "command": "editor.action.removeCommentLine",
-      "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-      "key": "ctrl+k",
-      "command": "explorer.newFolder"
-  },
-  {
-      "key": "ctrl+n",
-      "command": "-workbench.action.files.newUntitledFile"
-  },
-  {
-      "key": "ctrl+alt+win+n",
-      "command": "-welcome.showNewFileEntries"
-  },
-  {
-      "key": "ctrl+n",
-      "command": "explorer.newFile"
-  },
-  {
-      "key": "ctrl+shift+k",
-      "command": "-editor.action.deleteLines",
-      "when": "textInputFocus && !editorReadonly"
-  },
-  {
-      "key": "ctrl+k ctrl+c",
-      "command": "-editor.action.addCommentLine",
-      "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-      "key": "ctrl+k ctrl+u",
-      "command": "-editor.action.removeCommentLine",
-      "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-      "key": "ctrl+shift+k",
-      "command": "editor.action.addCommentLine"
-  },
-  {
-      "key": "tab",
-      "command": "acceptSelectedSuggestion",
-      "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
-  },
-  {
-      "key": "tab",
-      "command": "-acceptSelectedSuggestion",
-      "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
-  }
+    {
+        "key": "shift+c",
+        "command": "editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+u",
+        "command": "editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+alt+win+n",
+        "command": "-welcome.showNewFileEntries"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "-editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+u",
+        "command": "-editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "editor.action.addCommentLine"
+    },
+    {
+        "key": "tab",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "tab",
+        "command": "-acceptSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "-cursorDownSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.duplicateSelection"
+    },
+    {
+        "key": "ctrl+oem_comma",
+        "command": "-workbench.action.openSettings"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+shift+oem_comma",
+        "command": "-editor.action.inPlaceReplace.up",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+oem_comma",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+oem_3",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+; d",
+        "command": "-jupyter.moveCellsDown",
+        "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+k ctrl+d",
+        "command": "-editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
+    },
+    {
+        "key": "ctrl+k d",
+        "command": "-workbench.files.action.compareWithSaved"
+    },
+    {
+        "key": "ctrl+oem_comma",
+        "command": "terminal.focus"
+    }
 ]
